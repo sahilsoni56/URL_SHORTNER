@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: "DotGothic166";
+    src: url("../DotGothic16-Regular.ttf");
+}
+
+#main{
+    background-image: url("https://wallpapercave.com/wp/wp8907355.jpg");
+    background-size: cover; /* Or use 'contain' depending on your need */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar h1{
+    font-family: "DotGothic166";
+}
+
+#hero{
+    height: calc(100% - 7vw);
+}
+
+
+input{
+    outline: none;
+    font-weight: 900;
+}

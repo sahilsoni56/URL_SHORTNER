@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "build": "netlify deploy --prod"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "ejs": "^3.1.10",
+        "express": "^4.19.2",
+        "mongoose": "^8.5.4",
+        "netlify-lambda": "^2.0.16",
+        "serverless-http": "^3.2.0",
+        "uuid": "^10.0.0"
+    }
+}

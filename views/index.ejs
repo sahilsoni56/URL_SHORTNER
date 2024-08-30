@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main" class="w-full h-screen ">
+        <div class="px-[5vw] h-[7vw] py-[2vw] flex justify-between bg-[#967154] items-center" id="navbar">
+            <h1 class="text-[3.5vw]">Bub-It</h1>
+            <h1 class="text-[3vw]">URL-Shortner</h1>
+        </div>
+        <div id="hero" class="flex items-center justify-center gap-[4vw]">
+            <div id="part1" class="w-[40%] h-full flex justify-center items-center">
+                <div class="w-[70%] h-[50%] bg-[#af8b75] flex justify-center items-center overflow-hidden rounded-3xl" id="container-form">
+                    <div>
+                        <form id="urlForm" class="px-[3vw] flex flex-col gap-3" action="/URL_ENCODE" method="POST">
+                            <div class="flex gap-3 justify-center items-center">
+                                <i id="icon" class="ri-keyboard-line"></i>
+                                <h2 class="text-2xl leading-2 tracking-tight">Enter your long URL</h2>
+                            </div>
+                            <input class="w-full bg-transparent border-2 border-slate-200 h-[3vw] rounded-xl" type="text" name="OriginalUrl" id="url" placeholder="Paste your URL here..." required aria-label="URL input">
+                            <button type="submit" class="py-[0.7vw] rounded-3xl bg-yellow-950 text-yellow-200">Generate...</button>
+                        </form>
+
+                       
+                            <div class="flex mt-8 px-[3vw]">
+                                <input id="url-short" class="w-full bg-transparent border-2 border-slate-200 h-[3vw] rounded-xl" type="text" value="<%= shortUrl %>" readonly aria-label="Shortened URL">
+                                <button id="copyButton" class="ml-3 bg-blue-500 text-white px-4 py-2 rounded-xl">Copy</button>
+                            </div>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="part2" class="w-[40%] flex items-center justify-center h-full">
+                <img class="rounded-3xl" src="https://images.unsplash.com/photo-1616499370260-485b3e5ed653?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJvd3NlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Browser window image">
+            </div>
+        </div>
+    </div>
+    <script src="../jaavascript/script.js"></script>
+</body>
+</html>
